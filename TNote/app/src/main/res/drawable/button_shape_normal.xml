@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 设置边框圆角 -->
+    <corners android:radius="20dp"></corners>
+    <!-- 设置颜色渐变，这里设置的颜色是一样的-->
+    <gradient android:startColor="#38E145"
+              android:endColor="#38E145"></gradient>
+</shape>

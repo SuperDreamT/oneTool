@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="195dp"
+    android:background="@drawable/bank"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/iv_banklogo"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/banlogo1"/>
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/bankvisa1"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/tv_bank_bankNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1234 5678 8865 645"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_below="@id/iv_banklogo"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/asdasda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bank name:"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/tv_bank_bankNumber"/>
+
+    <TextView
+        android:id="@+id/tv_bank_bankName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/asdasda"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="5dp"
+        android:text="中国银行"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/tv_asda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_bank_bankNumber"
+        android:text="Cardholder"
+        android:textSize="13sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_bank_cardholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_asda"
+        android:layout_alignLeft="@id/tv_asda"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginTop="5dp"
+        android:text="张三"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+
+</RelativeLayout>

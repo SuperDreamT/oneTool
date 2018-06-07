@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#DAD6D6"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff">
+
+
+    <TextView
+        android:id="@+id/tv_lvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:text="title"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tv_lvContent"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        android:text="conten"
+        android:textColor="#9E9E9E"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textSize="13dp"/>
+    <TextView
+        android:id="@+id/tv_lvData"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:text="data"
+        android:textColor="#D2CECE"
+        android:gravity="center_vertical"
+        android:textSize="12dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#989797"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/llll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#006069">
+                <ImageButton
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/navleft1"
+                    android:background="@null"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/tv_mainTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="TNote"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="normal"
+                    android:layout_toRightOf="@id/btn"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical" />
+
+                <ImageView
+                    android:id="@+id/btn_addData"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="15dp"
+                    android:src="@mipmap/ic_add"/>
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/llll">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/ll_note"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/maincard">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/main1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:text="备忘录"
+                            android:textSize="20sp"
+                            android:gravity="center_vertical|center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_bank"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/maincard">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/main2"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:text="银行卡"
+                            android:textSize="20sp"
+                            android:gravity="center_vertical|center"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_bb"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/maincard">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/main1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:text="生日管家"
+                            android:textSize="20sp"
+                            android:gravity="center_vertical|center"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_gravity="left">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#0C4995"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/ic_home"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小蜜 V1.0"
+                    android:textSize="20sp"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+            <ListView
+                android:id="@+id/mainListview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/fab_add"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_margin="@dimen/dp_16"-->
+                <!--android:src="@mipmap/ic_toolbar_add"-->
+                <!--android:clickable="true"-->
+                <!--app:backgroundTint="@color/fab_ripple" />-->
+
+        </LinearLayout>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
+

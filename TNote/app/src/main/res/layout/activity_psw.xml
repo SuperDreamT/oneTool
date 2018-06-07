@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_psw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入密码"
+        android:textColor="#323232"
+        android:textSize="28sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sn"
+            android:id="@+id/PSWActivity_iv1"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sn"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/PSWActivity_iv2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sn"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/PSWActivity_iv3"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/sn"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/PSWActivity_iv4"/>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码错误"
+        android:textSize="30sp"
+        android:textColor="#EB7B5B"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="15dp"
+        android:id="@+id/tv_Error"/>
+
+
+    <!--键盘-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:id="@+id/PSWActivity_et1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="25sp"
+            android:textColor="#323232"
+            android:background="#FAFAFA"
+            android:id="@+id/PSWActivity_bt1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:textColor="#323232"
+            android:textSize="25sp"
+            android:background="#FAFAFA"
+            android:id="@+id/PSWActivity_bt2" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3"
+            android:textColor="#323232"
+            android:textSize="25sp"
+            android:background="#FAFAFA"
+            android:id="@+id/PSWActivity_bt3" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"
+            android:textColor="#323232"
+            android:textSize="25sp"
+            android:background="#FAFAFA"
+            android:id="@+id/PSWActivity_bt4" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:textColor="#323232"
+            android:textSize="25sp"
+            android:background="#FAFAFA"
+            android:id="@+id/PSWActivity_bt5" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6"
+            android:textColor="#323232"
+            android:textSize="25sp"
+            android:background="#FAFAFA"
+            android:id="@+id/PSWActivity_bt6" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7"
+                android:textColor="#323232"
+                android:textSize="25sp"
+                android:background="#FAFAFA"
+                android:id="@+id/PSWActivity_bt7" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8"
+                android:textColor="#323232"
+                android:textSize="25sp"
+                android:background="#FAFAFA"
+                android:id="@+id/PSWActivity_bt8" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9"
+                android:textColor="#323232"
+                android:textSize="25sp"
+                android:background="#FAFAFA"
+                android:id="@+id/PSWActivity_bt9" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" "
+            android:textColor="#323232"
+            android:clickable="true"
+            android:background="#FAFAFA" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textColor="#323232"
+            android:textSize="25sp"
+            android:background="#FAFAFA"
+            android:id="@+id/PSWActivity_bt0" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="✘"
+            android:textColor="#323232"
+            android:background="#FAFAFA"
+            android:id="@+id/PSWActivity_btDelete" />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

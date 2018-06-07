@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.superto.tnote.activity.AddNoteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <ImageView
+                android:id="@+id/iv_addData_back"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="#FAFAFA"
+                android:padding="8dp"
+                android:src="@mipmap/ic_lv_back" />
+
+            <TextView
+                android:id="@+id/dataShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text=" "
+                android:textSize="25sp" />
+
+            <ImageView
+                android:id="@+id/iv_addData_Yes"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="#FAFAFA"
+                android:padding="5dp"
+                android:src="@mipmap/ic_action_done_light" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#D8D4D4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_addData_title"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+
+                android:hint="标题"
+                android:maxLength="15"
+                android:text=""
+                android:textColor="#575656"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="0dp"
+                android:background="#D6D0D0" />
+
+            <EditText
+                android:id="@+id/et_addData_content"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="内容"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="#575656" />
+
+            <Button
+                android:id="@+id/btn_addData_delete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#F64A51"
+                android:text="删除"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

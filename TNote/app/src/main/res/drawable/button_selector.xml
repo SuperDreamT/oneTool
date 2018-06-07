@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+ <!-- 当控件的状态是按下的时候按钮的样式-->   
+    <item
+           android:state_pressed="true"
+           android:drawable="@drawable/button_shape_pressed">
+    </item>
+ <!-- 按钮不可点击的状态的时候的样式 -->
+    <item
+        android:state_enabled="false"
+        android:drawable="@drawable/button_shape_enable">
+    </item>   
+ <!-- 其余情况下的按钮的样式 -->   
+    <item 
+        android:drawable="@drawable/button_shape_normal">
+    </item>
+
+</selector>
